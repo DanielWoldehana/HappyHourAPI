@@ -1,7 +1,13 @@
 const express = require('express')
 const router = express.Router()
-const BarModel = require('../models/Parking')
+const ParkingModel = require('../models/Parking')
 
+
+router.get('/', (req, res) => {
+    ParkingModel.find({}).then((ph) => {
+        res.json(ph)
+    })
+})
 
 
 

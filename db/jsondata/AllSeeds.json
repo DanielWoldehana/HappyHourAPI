@@ -1,0 +1,35 @@
+[
+    {
+        "name":"NW DC",
+        "amountOfBars": 20,
+        "parking": [
+            {
+                "name": "Colonial Parking",
+                "address": "adress of parking spot",
+                "price": "$16/day"
+            }
+        ],
+        "bars": [
+            {
+                "name": "name of bar",
+                "address": "address of bar",
+                "hours": "hours bar is open",
+                "phoneNumber": "240-343-3432",
+                "website": "url of bar website",
+                "happyHour":{
+                    "hours": "happy hour hours",
+                    "hhBeerPrice": 5,
+                    "hhWinePrice": 6,
+                    "hhFoodPrice": 4
+                    },
+                "reviews": [
+                    {
+                        "name": "Daniel Woldehana",
+                        "score": 8,
+                        "review": "i got free booz so i love this place"
+                    }
+                ]
+            }
+        ]
+    }
+    ]
