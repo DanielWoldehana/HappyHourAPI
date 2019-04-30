@@ -1,0 +1,24 @@
+{
+  "name": "HappyHourAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielWoldehana/HappyHourAPI.git"
+  },
+  "keywords": [],
+  "author": "Daniel Woldehana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielWoldehana/HappyHourAPI/issues"
+  },
+  "homepage": "https://github.com/DanielWoldehana/HappyHourAPI#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.5.5"
+  }
+}
