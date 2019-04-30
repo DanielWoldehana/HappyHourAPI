@@ -1,5 +1,5 @@
-{
-    "bars": [
+
+[
     {
         "name": "name of bar",
         "address": "address of bar",
@@ -11,7 +11,13 @@
             "hhBeerPrice": 5,
             "hhWinePrice": 6,
             "hhFoodPrice": 4
+            },
+        "reviews": [
+            {
+                "name": "Daniel Woldehana",
+                "score": 8,
+                "review": "i got free booz so i love this place"
             }
+        ]
         }
     ]
-}
