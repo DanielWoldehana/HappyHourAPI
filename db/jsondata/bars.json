@@ -1,0 +1,17 @@
+{
+    "bars": [
+    {
+        "name": "name of bar",
+        "address": "address of bar",
+        "hours": "hours bar is open",
+        "phoneNumber": "240-343-3432",
+        "website": "url of bar website",
+        "happyHour":{
+            "hours": "happy hour hours",
+            "hhBeerPrice": 5,
+            "hhWinePrice": 6,
+            "hhFoodPrice": 4
+            }
+        }
+    ]
+}
