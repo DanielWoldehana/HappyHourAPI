@@ -26,4 +26,4 @@ const BarSchema = new Schema({
         ]
 })
 
-module.exports = mongoose.model('Bar', BarSchema)
+// module.exports = mongoose.model('Bar', BarSchema)

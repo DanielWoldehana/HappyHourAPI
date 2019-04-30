@@ -1,5 +1,5 @@
-[
-    {
+{
+    "city": [{
         "name":"NW DC",
         "amountOfBars": 20,
         "parking": [
@@ -32,4 +32,6 @@
             }
         ]
     }
-    ]
+]
+}
+    

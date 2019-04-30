@@ -11,4 +11,4 @@ const ParkingSchema = new Schema({
     price: String
 })
 
-module.exports = mongoose.model('Parking', ParkingSchema)
+// module.exports = mongoose.model('Parking', ParkingSchema)
