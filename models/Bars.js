@@ -1,7 +1,16 @@
 const mongoose = require('../db/connections')
 const Schema = mongoose.Schema
 
+
 const BarSchema = new Schema({
+        LocatedCity:{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'City'
+        },
+        parkingLot: [{
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Parking'
+        }],
         name: String,
         address: String,
         hours: String,
@@ -22,7 +31,7 @@ const BarSchema = new Schema({
         ]
 })
 
-module.exports = mongoose.model('bar', BarSchema)
+module.exports = mongoose.model('Bar', BarSchema)
 
 
 

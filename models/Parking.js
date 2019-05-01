@@ -13,4 +13,4 @@ const ParkingSchema = new Schema({
 
 
 
-module.exports = mongoose.model('parking', ParkingSchema)
+module.exports = mongoose.model('Parking', ParkingSchema)

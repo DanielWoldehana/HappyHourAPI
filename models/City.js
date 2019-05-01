@@ -4,7 +4,11 @@ const Schema = mongoose.Schema
 
 const CitySchema = new Schema({
     name: String,
-    amountOfBars: Number
+    amountOfBars: Number,
+    bars:[{
+        type: mongoose.Schema.Types.ObjectId, 
+        ref: 'Bar'
+    }]
 })
 
 module.exports = mongoose.model('City', CitySchema)
