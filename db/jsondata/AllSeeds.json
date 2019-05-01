@@ -25,7 +25,7 @@
             {
                 "name": "name of bar",
                 "address": "address of bar",
-                "hours": "hours bar is open",
+                "hours": "12pm",
                 "phoneNumber": "240-343-3432",
                 "website": "url of bar website",
                 "happyHour":{
@@ -43,7 +43,7 @@
             {
                 "name": "2ndBar",
                 "address": "address 2nd bar",
-                "hours": "hours bar is open 2nd bar",
+                "hours": "3am",
                 "phoneNumber": "240-343-3432 2nd bar",
                 "website": "url of bar website 2nd bar",
                 "happyHour":{
@@ -63,7 +63,7 @@
             {
                 "name": "3rdBar",
                 "address": "address 3rd bar",
-                "hours": "hours bar is open 3rd bar",
+                "hours": "10pm",
                 "phoneNumber": "240-343-3432 3rd bar",
                 "website": "url of bar website 3rd bar",
                 "happyHour":{
