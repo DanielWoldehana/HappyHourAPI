@@ -93,8 +93,8 @@ router.put('/:nameOfBarToUpdate', (req, res) => {
 
 
 //All Delete requests
-router.delete('/deleteBar/:barName', (req, res) => {
-    BarModel.deleteOne({name: req.params.barName})
+router.delete('/deleteBar/:objectID', (req, res) => {
+    BarModel.deleteOne({name: req.params.objectID})
 })
 
 module.exports = router

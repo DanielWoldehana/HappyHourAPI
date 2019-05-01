@@ -6,7 +6,11 @@ const bars = new Schema
 const ParkingSchema = new Schema({
     name: String,
     address: String,
-    price: String
+    phoneNumber: String,
+    website: String,
+    price: Number
 })
+
+
 
 module.exports = mongoose.model('parking', ParkingSchema)

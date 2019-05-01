@@ -8,17 +8,23 @@
             {
                 "name": "Colonial Parking",
                 "address": "adress of parking spot",
-                "price": "$16/day"
+                "phoneNumber":"240-343-3432",
+                "website": "www.parking@something",
+                "price": 16
             },
             {
                 "name": "2nd Colonial Parking ",
                 "address": "adress of 2nd parking spot",
-                "price": "$20/day"
+                "phoneNumber":"240-343-3432",
+                "website": "www.parking@something",
+                "price": 20
             },
             {
                 "name": "3rd Colonial Parking ",
                 "address": "adress of 3rd parking spot",
-                "price": "$12/day"
+                "phoneNumber":"240-343-3432",
+                "website": "www.parking@something",
+                "price": 14
             }
         ],
         "bars": [
