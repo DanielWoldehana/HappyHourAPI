@@ -2,10 +2,6 @@ const mongoose = require('../db/connections')
 const Schema = mongoose.Schema
 
 const BarSchema = new Schema({
-    city: {
-        ref:"City",
-        type: mongoose.Schema.Types.ObjectId
-    },
     name: String,
         address: String,
         hours: String,
@@ -23,7 +19,15 @@ const BarSchema = new Schema({
                 score: Number,
                 review: String
             }
-        ]
+        ],
+        city: {
+            ref:"City",
+            type: mongoose.Schema.Types.ObjectId
+        }
 })
 
-// module.exports = mongoose.model('Bar', BarSchema)
+module.exports = mongoose.model('Bar', BarSchema)
+
+
+
+

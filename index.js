@@ -14,4 +14,4 @@ app.use('/api/city', cityController)
 app.use('/api/parking', parkingController)
 app.use('/api/bars', barController)
 
-app.listen(3000, () => console.log('NEMO00 Just keep swimming......on port 3000'))
+app.listen(process.env.PORT || 3000, () => console.log('NEMO00 Just keep swimming......on port 3000'))
