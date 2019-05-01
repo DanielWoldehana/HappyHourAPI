@@ -1,5 +1,17 @@
+const mongoose = require('../db/connections')
+const Schema = mongoose.Schema
+
+
+const CitySchema = new Schema({
+    name: String,
+    amountOfBars: Number
+})
+
+module.exports = mongoose.model('City', CitySchema)
+
 // const mongoose = require('../db/connections')
 // const Schema = mongoose.Schema
+
 
 // const ParkingSchema = new Schema({
 //     name: String,
@@ -8,56 +20,19 @@
 // })
 
 
-// const BarSchema = new Schema({
-//     name: String,
-//         address: String,
-//         hours: String,
-//         phoneNumber: String,
-//         website: String,
-//         happyHour:{
-//             hours: String,
-//             hhBeerPrice: Number,
-//             hhWinePrice: Number,
-//             hhFoodPrice: Number
-//             },
-//         reviews: [
-//             {
-//                 name: String,
-//                 score: Number,
-//                 review: String
-//             }
-//         ]
-// })
-
-
 
 // const CitySchema = new Schema({
 //     name: String,
 //     amountOfBars: Number,
-//     parking: [ParkingSchema],
-//     bars: [BarSchema]
+//     parkingSpot: [ParkingSchema],
+//     barsAround: [{
+//         type: Schema.Types.ObjectId,
+//         ref: 'bar'
+//     }]
 // })
 
-// module.exports = mongoose.model('City', CitySchema)
+// let citySchema = mongoose.model('city', CitySchema)
 
-
-
-
-const mongoose = require('../db/connections')
-const Schema = mongoose.Schema
-const CitySchema = new Schema({
-    name: String,
-    amountOfBars: Number,
-    parking: [{
-        type: mongoose.Types.ObjectId,
-        ref: 'Parking'
-    }],
-    bars: [{
-        type: mongoose.Types.ObjectId,
-        ref: 'Bar'
-    }]
-})
-
-module.exports = mongoose.model('City', CitySchema)
+// module.exports = citySchema
 
 

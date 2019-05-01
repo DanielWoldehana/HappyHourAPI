@@ -1,11 +1,24 @@
-{
-        "name":"NW DC",
-        "amountOfBars": 20,
+[
+    {
+        "city": {
+            "name":"NW DC",
+            "amountOfBars": 20
+        },
         "parking": [
             {
                 "name": "Colonial Parking",
                 "address": "adress of parking spot",
                 "price": "$16/day"
+            },
+            {
+                "name": "2nd Colonial Parking ",
+                "address": "adress of 2nd parking spot",
+                "price": "$20/day"
+            },
+            {
+                "name": "3rd Colonial Parking ",
+                "address": "adress of 3rd parking spot",
+                "price": "$12/day"
             }
         ],
         "bars": [
@@ -21,15 +34,53 @@
                     "hhWinePrice": 6,
                     "hhFoodPrice": 4
                     },
-                "reviews": [
-                    {
+                "reviews": [{
                         "name": "Daniel Woldehana",
                         "score": 8,
                         "review": "i got free booz so i love this place"
+                    }]
+            },
+            {
+                "name": "2ndBar",
+                "address": "address 2nd bar",
+                "hours": "hours bar is open 2nd bar",
+                "phoneNumber": "240-343-3432 2nd bar",
+                "website": "url of bar website 2nd bar",
+                "happyHour":{
+                    "hours": "happy hour hours",
+                    "hhBeerPrice": 8,
+                    "hhWinePrice": 9,
+                    "hhFoodPrice": 10
+                    },
+                "reviews": [
+                    {
+                        "name": "Rasha",
+                        "score": 0,
+                        "review": "i dont like this bar because they serve alchol"
+                    }
+                ]
+            },
+            {
+                "name": "3rdBar",
+                "address": "address 3rd bar",
+                "hours": "hours bar is open 3rd bar",
+                "phoneNumber": "240-343-3432 3rd bar",
+                "website": "url of bar website 3rd bar",
+                "happyHour":{
+                    "hours": "happy hour hours",
+                    "hhBeerPrice": 3,
+                    "hhWinePrice": 4,
+                    "hhFoodPrice": 5
+                    },
+                "reviews": [
+                    {
+                        "name": "Gabby",
+                        "score": 10,
+                        "review": "Their drinks are cheap but taste great and so doess their food"
                     }
                 ]
             }
         ]
-    
 }
+]
     
