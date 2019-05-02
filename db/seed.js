@@ -1,5 +1,5 @@
 const mongoose = require('./connections')
-const CityModel = require('../models/City')
+const ReviewModel = require('../models/Review')
 const ParkingModel = require('../models/Parking')
 const BarsModel = require('../models/Bars')
 
@@ -7,11 +7,16 @@ const BarsModel = require('../models/Bars')
 // const Cityseed = require('./jsondata/city.json')
 // const Barseed = require('./jsondata/bars.json')
 // const Parkseed = require('./jsondata/parking.json')
-const SeedObject = require('./jsondata/AllSeeds.json')
+const SeedObject = require('./AllSeeds.json')
 
     SeedObject.map(item => {
-        CityModel.deleteMany({}).then(() => {
-            CityModel.create(item.city).then(ph => {
+        BarsModel.deleteMany({}).then(()=> {
+            BarsModel.create(item.bars).then(ph => {
+                console.log(ph)
+            })
+        })
+        ReviewModel.deleteMany({}).then(() => {
+            ReviewModel.create(item.reviews).then(ph => {
                 console.log(ph)
             })
         })
@@ -20,12 +25,7 @@ const SeedObject = require('./jsondata/AllSeeds.json')
             console.log(ph)
         })
     })
-      BarsModel.deleteMany({}).then(()=> {
-        BarsModel.create(item.bars).then(ph => {
-            console.log(ph)
-        })
-    })
-    })
+})
 
 
 
@@ -49,3 +49,5 @@ const SeedObject = require('./jsondata/AllSeeds.json')
 //         console.error(err)
 //     })
 // })
+
+

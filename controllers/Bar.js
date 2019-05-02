@@ -29,7 +29,7 @@ router.get('/name/:name', (req, res) => {
 
 //find bars with the Beer HappyHour price less then req.params
 router.get('/hhBeerLessThen/:price', (req, res) => {
-    BarModel.find({ "happyHour.hhBeerPrice": {$lt:  req.params.price}})
+    BarModel.find({ "happyHour.hhBeerPrice": {$lte:  req.params.price}})
     .then((ph) => {
         res.json(ph)
         console.log(ph)

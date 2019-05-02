@@ -1,32 +1,5 @@
 [
     {
-        "city": {
-            "name":"NW DC",
-            "amountOfBars": 20
-        },
-        "parking": [
-            {
-                "name": "Colonial Parking",
-                "address": "adress of parking spot",
-                "phoneNumber":"240-343-3432",
-                "website": "www.parking@something",
-                "price": 16
-            },
-            {
-                "name": "2nd Colonial Parking ",
-                "address": "adress of 2nd parking spot",
-                "phoneNumber":"240-343-3432",
-                "website": "www.parking@something",
-                "price": 20
-            },
-            {
-                "name": "3rd Colonial Parking ",
-                "address": "adress of 3rd parking spot",
-                "phoneNumber":"240-343-3432",
-                "website": "www.parking@something",
-                "price": 14
-            }
-        ],
         "bars": [
             {
                 "name": "name of bar",
@@ -44,7 +17,15 @@
                         "name": "Daniel Woldehana",
                         "score": 8,
                         "review": "i got free booz so i love this place"
-                    }]
+                    }],
+                "parking": [{
+                    "name": "Colonial Parking",
+                    "address": "adress of parking spot",
+                    "phoneNumber":"240-343-3432",
+                    "website": "www.parking@something",
+                    "price": 16
+                }]
+        
             },
             {
                 "name": "2ndBar",
@@ -64,7 +45,14 @@
                         "score": 0,
                         "review": "i dont like this bar because they serve alchol"
                     }
-                ]
+                ],
+                "parking": [{
+                    "name": "2nd Colonial Parking ",
+                    "address": "adress of 2nd parking spot",
+                    "phoneNumber":"240-343-3432",
+                    "website": "www.parking@something",
+                    "price": 20
+                }]
             },
             {
                 "name": "3rdBar",
@@ -84,7 +72,14 @@
                         "score": 10,
                         "review": "Their drinks are cheap but taste great and so doess their food"
                     }
-                ]
+                ],
+                "parking": [{
+                    "name": "2nd Colonial Parking ",
+                    "address": "adress of 2nd parking spot",
+                    "phoneNumber":"240-343-3432",
+                    "website": "www.parking@something",
+                    "price": 20
+                }]
             }
         ]
 }

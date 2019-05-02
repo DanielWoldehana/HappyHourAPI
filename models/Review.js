@@ -2,16 +2,13 @@ const mongoose = require('../db/connections')
 const Schema = mongoose.Schema
 
 
-const CitySchema = new Schema({
-    name: String,
-    amountOfBars: Number,
-    bars:[{
-        type: mongoose.Schema.Types.ObjectId, 
-        ref: 'Bar'
-    }]
+const ReviewSchema = new Schema({
+        name: String,
+        score: Number,
+        review: String
 })
 
-module.exports = mongoose.model('City', CitySchema)
+module.exports = mongoose.model('Review', ReviewSchema)
 
 // const mongoose = require('../db/connections')
 // const Schema = mongoose.Schema
