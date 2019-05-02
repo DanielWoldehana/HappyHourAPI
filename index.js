@@ -10,6 +10,7 @@ const app = express()
 app.use(parser.urlencoded({extended: true}))
 app.use(parser.json())
 
+//All my Main Routes
 app.use('/api/reviews', reviewController)
 app.use('/api/parking', parkingController)
 app.use('/api/bar', barController)
