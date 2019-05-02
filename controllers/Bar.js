@@ -7,8 +7,9 @@ const BarModel = require('../models/Bar')
 ///All Get requests....
 //Show all Bars
 router.get('/', (req, res) => {
-    BarModel.find({}).populate('reviews') 
-        .populate('parking')
+    BarModel.find({})
+        // .populate('reviews') 
+        // .populate('parking')
        .then((ph) => {
            res.json(ph)
        })
@@ -49,15 +50,6 @@ router.get('/hhWineLorE/:price', (req, res) => {
 //find bars with the Food HappyHour price less then req.params
 router.get('/hhFoodLorE/:price', (req, res) => {
     BarModel.find({ "happyHour.hhFoodPrice": {$lte:  req.params.price}})
-    .then((ph) => {
-        res.json(ph)
-        console.log(ph)
-    })
-})
-
-//find bars with a review Score higher then req.params
-router.get('/reviewScore/:score', (req, res) => {
-    BarModel.find({ "reviews.score": req.params.score})
     .then((ph) => {
         res.json(ph)
         console.log(ph)
