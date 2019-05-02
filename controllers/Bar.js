@@ -1,16 +1,17 @@
 const express = require('express')
 const router = express.Router()
-const BarModel = require('../models/Bars')
+const BarModel = require('../models/Bar')
 
 
 
 ///All Get requests....
 //Show all Bars
 router.get('/', (req, res) => {
-    BarModel.find({}).then((ph) => {
-        res.json(ph)
-        console.log(ph)
-    })
+    BarModel.find({}).populate('reviews') 
+        .populate('parking')
+       .then((ph) => {
+           res.json(ph)
+       })
     .catch(err => {
         console.error(err)
     })
@@ -28,7 +29,7 @@ router.get('/name/:name', (req, res) => {
 
 
 //find bars with the Beer HappyHour price less then req.params
-router.get('/hhBeerLessThen/:price', (req, res) => {
+router.get('/hhBeerLorE/:price', (req, res) => {
     BarModel.find({ "happyHour.hhBeerPrice": {$lte:  req.params.price}})
     .then((ph) => {
         res.json(ph)
@@ -37,8 +38,8 @@ router.get('/hhBeerLessThen/:price', (req, res) => {
 })
 
 //find bars with the Wine HappyHour price less then req.params
-router.get('/hhWineLessThen/:price', (req, res) => {
-    BarModel.find({ "happyHour.hhWinePrice": {$lt:  req.params.price}})
+router.get('/hhWineLorE/:price', (req, res) => {
+    BarModel.find({ "happyHour.hhWinePrice": {$lte:  req.params.price}})
     .then((ph) => {
         res.json(ph)
         console.log(ph)
@@ -46,8 +47,8 @@ router.get('/hhWineLessThen/:price', (req, res) => {
 })
 
 //find bars with the Food HappyHour price less then req.params
-router.get('/hhFoodLessThen/:price', (req, res) => {
-    BarModel.find({ "happyHour.hhFoodPrice": {$lt:  req.params.price}})
+router.get('/hhFoodLorE/:price', (req, res) => {
+    BarModel.find({ "happyHour.hhFoodPrice": {$lte:  req.params.price}})
     .then((ph) => {
         res.json(ph)
         console.log(ph)
@@ -56,7 +57,7 @@ router.get('/hhFoodLessThen/:price', (req, res) => {
 
 //find bars with a review Score higher then req.params
 router.get('/reviewScore/:score', (req, res) => {
-    BarModel.find({ "reviews.score": {$gte:  req.params.score}})
+    BarModel.find({ "reviews.score": req.params.score})
     .then((ph) => {
         res.json(ph)
         console.log(ph)

@@ -16,6 +16,18 @@ router.get('/', (req, res) => {
 })
 
 
+//Find all Parking spots by Name
+router.get('/name/:name', (req, res) => {
+    ParkingModel.find({name: req.params.name}).then((ph) => {
+        res.json(ph)
+        console.log(ph)
+    })
+    .catch(err => {
+        console.error(err)
+    })
+})
+
+
 //find all parking place with a price less then req.params
 router.get('/PriceLessThen/:price', (req, res) => {
     ParkingModel.find({price: {$lt: req.params.price}})
@@ -37,8 +49,8 @@ router.post('/newParkingLot', (req, res) => {
 //All PUT requests 
 //find the Parking lot by name and update anything about it by inserting it in the req.body
 
-router.put('/updateParkingLot/:name', (req, res) => {
-    ParkingModel.findOneAndUpdate({name: req.params.name}, req.body)
+router.put('/updateParkingLot/:ID', (req, res) => {
+    ParkingModel.findOneAndUpdate({_id: req.params.ID}, req.body)
     .then((ph) => {
         res.json(ph)
     })

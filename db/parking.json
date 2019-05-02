@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Colonial Parking",
+        "address": "adress of parking spot",
+        "phoneNumber":"240-343-3432",
+        "website": "www.parking@something",
+        "price": 16
+    },
+    {
+        "name": "2nd Colonial Parking ",
+        "address": "adress of 2nd parking spot",
+        "phoneNumber":"240-343-3432",
+        "website": "www.parking@something",
+        "price": 20
+    }
+]

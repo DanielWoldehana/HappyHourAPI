@@ -13,7 +13,15 @@ const BarSchema = new Schema({
             hhBeerPrice: Number,
             hhWinePrice: Number,
             hhFoodPrice: Number
-            }
+            },
+        reviews:[{
+            ref: 'Review',
+            type:mongoose.Schema.Types.ObjectId
+        }],
+        parking:[{
+            ref: 'Parking',
+            type:mongoose.Schema.Types.ObjectId
+        }]
 })
 
 module.exports = mongoose.model('Bar', BarSchema)

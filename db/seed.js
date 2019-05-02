@@ -1,53 +1,46 @@
 const mongoose = require('./connections')
 const ReviewModel = require('../models/Review')
 const ParkingModel = require('../models/Parking')
-const BarsModel = require('../models/Bars')
+const BarsModel = require('../models/Bar')
 
 
-// const Cityseed = require('./jsondata/city.json')
-// const Barseed = require('./jsondata/bars.json')
-// const Parkseed = require('./jsondata/parking.json')
-const SeedObject = require('./AllSeeds.json')
+const AllBars = require('./seeddata.json')
+const AllReviews = require('./reviews.json')
+const AllParking = require('./parking.json')
 
-    SeedObject.map(item => {
-        BarsModel.deleteMany({}).then(()=> {
-            BarsModel.create(item.bars).then(ph => {
-                console.log(ph)
-            })
-        })
-        ReviewModel.deleteMany({}).then(() => {
-            ReviewModel.create(item.reviews).then(ph => {
-                console.log(ph)
-            })
-        })
-      ParkingModel.deleteMany({}).then(() => {
-        ParkingModel.create(item.parking).then(ph => {
-            console.log(ph)
+BarsModel.deleteMany({}).then(() => {
+    ReviewModel.deleteMany({}).then(() => {
+        ParkingModel.deleteMany({}).then(() => {
+
+
+            for(let i = 0; i < AllBars.length; i++ ){ 
+                BarsModel.create(AllBars[i]).then((newBar) => {
+                    console.log(newBar)
+                    ReviewModel.create(AllReviews[i]).then((newReview) => {
+                        ParkingModel.create(AllParking[i]).then((newParking) => {
+                            newBar.parking.push(newParking._id)
+                            newBar.reviews.push(newReview._id)
+                            newReview.bar = newBar._id
+                            newBar.save()
+                            newReview.save()
+                            console.log(newReview)
+                        })
+                    })
+                })
+            }
+
         })
     })
 })
 
-
-
-// SeedObject.map(item => {
-//     CityModel.deleteMany({}).then(() => {
-//         BarsModel.deleteMany({}).then(()=> {
-//         CityModel.create(item.city).then((newCity) =>  {
-//             console.log(newCity)
-//             BarsModel.create(item.bars).then((newBars) => {
-//                 console.log(newBars)
-//                newCity.bars.push(newBars._id)
-//                newBars.city = newCity
-
-//                newCity.save()
-//                newBars.save()
-//            })
-//         })
-//         })
-//     })
-//     .catch(err => {
-//         console.error(err)
-//     })
+// BarsModel.find({ name: "name of bar"}).then(barname => {
+//     ReviewModel.create()
+//     barname.reviews.push()
 // })
+
+
+
+
+
 
 
