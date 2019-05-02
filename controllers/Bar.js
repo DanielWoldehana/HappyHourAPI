@@ -8,7 +8,7 @@ const BarModel = require('../models/Bar')
 //Show all Bars
 router.get('/', (req, res) => {
     BarModel.find({})
-        // .populate('reviews') 
+        .populate('reviews') 
         // .populate('parking')
        .then((ph) => {
            res.json(ph)

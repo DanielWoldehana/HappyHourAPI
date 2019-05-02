@@ -1,12 +1,80 @@
-[
-	{
-		"name": "Daniel Woldehana",
-		"score": 8,
-		"review": "i got free booz so i love this place"
+	[	
+		{
+		"name": "Mihai",
+		"score": 4,
+		"review": "Nice restaurant, nice ambiance and interesting flavors on their pizzas, reasonable prices, except for a nasty surprise. Service was so, so, but but what really got us was the price of water: Asked for a bottle of sparkling water and got a 750 ml San Pelegríno (that was not on the menu). The bill came with the water at $12, more expensive than wine or beer... Haven’t seen such a price at really upscale restaurants anywhere, not even at an Airport. Asked the hostess if there was any mistake, and all I got was a smile...",
+		"yelp":"https://www.yelp.com/biz/city-tap-house-washington"
 	},
 	{
-		"name": "Rasha",
-		"score": 0,
-		"review": "i dont like this bar because they serve alchol"
+		"name": "Chris",
+		"score": 4.3,
+		"review": "Good food. Good beer. Clean restroom. Excellent customer service. The only down side is that it is definitely the loudest place I've been to, but that can also be a good thing.",
+		"yelp":"https://www.yelp.com/biz/fado-irish-pub-washington-4"
+	},
+	{
+		"name": "Elizabeth",
+		"score": 4.1,
+		"review": "Such an eclectic yet simple place. Really enjoyed our time here! The drinks (Old Fashioned) & Poutine Pot were fabulous together 😍 it gets pretty busy on Saturday nights!",
+		"yelp": "https://www.yelp.com/biz/bar-deco-washington-2"
+	},
+	{
+		"name": "Dondré",
+		"score": 4.3,
+		"review": "Upon arrival we were told that we'd have to eat at the bar or wait 15 minutes to be seated. This wouldn't have been a problem if there weren't so many empty tables. We walked by the outdoor section and saw at least 4 tables that were empty, clean and had silverware setup. Inside there was also more empty tables. This was irritating. We eventually got outdoor seating and our waitress was great! She was very sweet and accommodating. The menu is small but what i ordered was really good. The atmosphere of this place is fun of the weather is nice it's worth sitting outside for sure.",
+		"yelp": "https://www.yelp.com/biz/espita-mezcaleria-washington"
+	},
+	{
+		"name": "Claudia",
+		"score": 4.5,
+		"review": "We got our monies worth out of the burger but for the milkshake I cant say the same. We went after the car show and had eggs and bacon just for the candied bacon which had just the right amount of sweet and paired perfectly with each bite of the deviled egg I took. I wish it was pieces chipped on top of the eggs but no real complaints. My dinner was great. my seafood burger was especially good and unique. however the milkshake that I thought was gonna be well worth the money was not. it was a small cup that didn't not taste like a salted caramel milk shake. I got more talk than anything, very like liquor and only small portion. I might be comparing it in my head to another one I have had at a diner in Bethesda  but to me it was lackluster and the other guests at the table shared my sentiments. over all positive experience and if you'd like a good place for well crafted burgers try it out.",
+		"yelp": "https://www.yelp.com/biz/the-capital-burger-washington-5"
+	},
+	{
+		"name": "Ben",
+		"score": 4.2,
+		"review": "The reason I dined at The Crimson Diner was simply from the convenience and of being in the right location relative to where I was staying, which was the POD Hotel. Since it was on the first floor of the hotel, I thought I would check it out. I was not disappointed. First off, I love a good coffee, and they serve a delightful black coffee! Nice roasted flavor, no frills, good price point. Second, their breakfast omelet is exactly what I want from a traditional breakfast diner. A massive portion which is a comforting blanket with eggs/meat/cheese, potatoes, ketchup, and a full belly when I leave. This space was a bit more modern than traditional diners, but that's okay. It's hip, without charging for the hip environment — a great spot for breakfast in China Town. You won't be disappointed.",
+		"yelp": "https://www.yelp.com/biz/crimson-diner-and-whiskey-bar-washington"
+	},
+	{
+		"name": "Ahmad",
+		"score": 4.2,
+		"review": "Love the decor and ambiance of this place. I am used to Spanish (Spain food) food so the food was very close to it, but not quite. Delicious nonetheless! The servers are knowledgeable of the food so they can help you with any food questions. A bit pricey but definitely worth dinning at least once.",
+		"yelp": "https://www.yelp.com/biz/cuba-libre-restaurant-and-rum-bar-washington-dc-washington"
+	},
+	{
+		"name": "Taylor",
+		"score": 4.4,
+		"review": "Sudhouse is my favorite bar in DC, hands down! Their daily specials and happy hours cannot be missed- delicious tacos, burgers, and nachos. Danielle is the best part of any visit to the bar, and Luca, Tony, and Simo remember your name and greet you as old friends. Highly recommend on so many levels!",
+		"yelp": "https://www.yelp.com/biz/sudhouse-washington"
+	},
+	{
+		"name": "John",
+		"score": 4.4,
+		"review": "Gosh I love this place. The owner is so sweet and the food great. They did such a great job changing this place from a lack-luster space into something that really adds to Bloomingdale. Hope you all have long lasting success. Everyone should come for a glass of wine and some food on the patio.",
+		"yelp": "https://www.yelp.com/biz/tyber-creek-wine-bar-and-kitchen-washington-2"
+	},
+	{
+		"name": "jake",
+		"score": 4.3,
+		"review": "The atmosphere was great. I had a reservation for 8:30 and showed up at 8:00 and was still seated right away.  The service was perfect and friendly. They knew the menu and what to recommend to us. The food was absolutely divine, especially the bacon jam. I would highly recommend this place to anyone and will definitely be coming back.",
+		"yelp": "https://www.yelp.com/biz/logan-tavern-washington"
+	},
+	{
+		"name": "Onyinyechi",
+		"score": 4.1,
+		"review": "Went here on thursday March 14th around 8. Me and my group were seated at the table/couch area on the right after you get to the 2nd floor. we purchased 2 hookahs and plenty of drinks. An hour into being at this establishment one of the waitress informed us that we have to move because someone has bought the section. I asked her why couldn't they be seated else where. There was an entire section to the right of the DJ booth that was available. She stated they wanted our location and paid for it in advance and that we should have never been seated there in the first place. I informed her that sounds like bad management on their part and not something I the customer should deal with. She insisted that we had to move and stood there. I asked my entire party to pick up their hookahs and drinks to move. We went to another table closed out our tabs and left. This was ridiculous that they made is move when 1. we were seated there by their staff. 2. there was another section the people can move to. 3. they didn't compensate or offer any concessions for making us move. Its a billion hookahs spots in dc. I advise you go to another one.",
+		"yelp": "https://www.yelp.com/biz/right-spot-restaurant-and-bar-washington"
+	 },
+	{
+		"name": "Johnny",
+		"score": 4.4,
+		"review": "Exquisite food, very knowledgeable staff and the General Manager was amazing. He really knew his stuff. If you're a wine, champagne etc. connoisseur, he's IS the guy to talk to. Very well versed in wines etc..",
+		"yelp": "https://www.yelp.com/biz/brasserie-beck-washington-3"
+	},
+	{
+		"name": "Bernette",
+		"score": 4.3,
+		"review": "Liked the atmosphere. I went for lunch and ordered the fish and fries. The fries were great, but the fish was under seasoned. My company enjoyed their food, and the complimentary cornbread was delicious. Would definitely try it again, perhaps for dinner the next time. The customer service was good.",
+		"yelp": "https://www.yelp.com/biz/district-chophouse-and-brewery-washington-3"
 	}
 ]

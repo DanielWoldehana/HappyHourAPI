@@ -12,5 +12,68 @@
         "phoneNumber":"240-343-3432",
         "website": "NA",
         "price": 0
+    },
+    {
+        "name": "Loc-440-CityCenterDC",
+        "address": "870 9th St NW, Washington, DC 20001",
+        "phoneNumber":"202-289-9000",
+        "website": "http://citycenterdc.com/contact/",
+        "price": 12
+    },
+    {
+        "name": "InterPark",
+        "address": "800 K St NW, Washington, DC 20001",
+        "phoneNumber":"240-343-3432",
+        "website": "NA",
+        "price": 0
+    },
+    {
+        "name": "Loc-440-CityCenterDC",
+        "address": "870 9th St NW, Washington, DC 20001",
+        "phoneNumber":"202-289-9000",
+        "website": "http://citycenterdc.com/contact/",
+        "price": 12
+    },
+    {
+        "name": "InterPark",
+        "address": "800 K St NW, Washington, DC 20001",
+        "phoneNumber":"240-343-3432",
+        "website": "NA",
+        "price": 0
+    },
+    {
+        "name": "Loc-440-CityCenterDC",
+        "address": "870 9th St NW, Washington, DC 20001",
+        "phoneNumber":"202-289-9000",
+        "website": "http://citycenterdc.com/contact/",
+        "price": 12
+    },
+    {
+        "name": "InterPark",
+        "address": "800 K St NW, Washington, DC 20001",
+        "phoneNumber":"240-343-3432",
+        "website": "NA",
+        "price": 0
+    },
+    {
+        "name": "Loc-440-CityCenterDC",
+        "address": "870 9th St NW, Washington, DC 20001",
+        "phoneNumber":"202-289-9000",
+        "website": "http://citycenterdc.com/contact/",
+        "price": 12
+    },
+    {
+        "name": "InterPark",
+        "address": "800 K St NW, Washington, DC 20001",
+        "phoneNumber":"240-343-3432",
+        "website": "NA",
+        "price": 0
+    },
+    {
+            "name": "InterPark",
+            "address": "800 K St NW, Washington, DC 20001",
+            "phoneNumber":"240-343-3432",
+            "website": "NA",
+            "price": 0
     }
 ]

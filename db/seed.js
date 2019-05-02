@@ -8,38 +8,26 @@ const AllBars = require('./seeddata.json')
 const AllReviews = require('./reviews.json')
 const AllParking = require('./parking.json')
 
+
 BarsModel.deleteMany({}).then(() => {
     ReviewModel.deleteMany({}).then(() => {
         ParkingModel.deleteMany({}).then(() => {
-
-
-            for(let i = 0; i < AllBars.length; i++ ){ 
-                BarsModel.create(AllBars[i]).then((newBar) => {
-                    console.log(newBar)
-                    ReviewModel.create(AllReviews[i]).then((newReview) => {
-                        ParkingModel.create(AllParking[i]).then((newParking) => {
-                            newBar.parking.push(newParking._id)
-                            newBar.reviews.push(newReview._id)
-                            newReview.bar = newBar._id
-                            newBar.save()
-                            newReview.save()
-                            console.log(newReview)
-                        })
-                    })
-                })
-            }
-
+    for(let i = 0 ; i < AllBars.length; i++){
+        console.log(AllBars.length)
+    BarsModel.create(AllBars[i]).then((newBar) => {
+        ReviewModel.create(AllReviews[i]).then((newReview) => {
+            ParkingModel.create(AllParking[i]).then((newParking) => {
+            newBar.reviews.push(newReview._id)
+            newBar.parking.push(newParking.address)
+            newBar.save()
+            console.log(newBar)
+        })
         })
     })
+}
 })
-
-// BarsModel.find({ name: "name of bar"}).then(barname => {
-//     ReviewModel.create()
-//     barname.reviews.push()
-// })
-
-
-
+})
+})
 
 
 

@@ -36,7 +36,7 @@
 		"phoneNumber": "(202) 789-0066",
 		"website": "https://fadoirishpub.com/washington/menus/",
 		"happyHour":{
-			"hours": "happy hour hours",
+			"hours": "4PM-7PM",
 			"hhBeerPrice": 5,
 			"hhWinePrice": 7,
 			"hhmixedDrink": 8,
@@ -156,26 +156,26 @@
 			}
 		},
 	{
-		"name": "Cuba Libre",
+		"name": "Sudhouse DC",
 		"image": "",
-		"address": "801 9th St NW suite a, Washington, DC 20001",
+		"address": "1340 U St NW, Washington, DC 20009",
 		"hours": {
-			"monday": "11:30AM–10PM",
-			"tuesday": "11:30AM–10PM",
-			"wednesday": "11:30AM–10PM",
-			"thursday": "11:30AM–11PM",
-			"friday": "11:30AM–3AM",
-			"saturday": "11:30AM–3AM",
-			"sunday": "11:30AM–9PM"
+			"monday": "4PM–2AM",
+			"tuesday": "4PM–2AM",
+			"wednesday": "4PM–2AM",
+			"thursday": "4PM–2AM",
+			"friday": "4PM–3AM",
+			"saturday": "4PM–3AM",
+			"sunday": "2PM–2AM"
 		},
-		"phoneNumber": "(202) 408-1600",
-		"website": "http://www.cubalibrerestaurant.com/en/washington/menus/happy-hour/",
+		"phoneNumber": "(202) 525-4188",
+		"website": "http://sudhousedc.com/hh.11.4.pdf",
 		"happyHour":{
-			"hours": "4PM-7PM",
+			"hours": "4PM-8PM",
 			"hhBeerPrice": 5,
 			"hhWinePrice": 5,
-			"hhmixedDrink": 6,
-			"hhFoodPrice": 6
+			"hhmixedDrink": 5,
+			"hhFoodPrice": 4
 			}
 		},
 	{
@@ -241,7 +241,7 @@
 		"happyHour":{
 			"hours": "4PM-8PM",
 			"hhBeerPrice": 5,
-			"hhShotPrice": 5
+			"hhShotsPrice": 5
 			}
 		},
 	{
@@ -266,6 +266,28 @@
 			"hhmixedDrink": 9,
 			"hhFoodPrice": 13
 			}
-	}
+	},
+	{
+		"name": "ChopHouse & Brewery",
+		"image": "",
+		"address": "509 7th St NW #1, Washington, DC 20004",
+		"hours": {
+			"monday": "11AM–10PM",
+			"tuesday": "11AM–11PM",
+			"wednesday": "11AM–11PM",
+			"thursday": "11AM–11PM",
+			"friday": "11AM–11PM",
+			"saturday": "11AM–11PM",
+			"sunday": "11AM–10PM"
+		},
+		"phoneNumber": "(202) 347-3434",
+		"website": "http://districtchophouse.com/",
+		"happyHour":{
+			"hours": "4PM-7PM",
+			"hhBeerPrice": 5,
+			"hhWinePrice": 5,
+			"hhFoodPrice": 8
+			}
+		}
 
 	]

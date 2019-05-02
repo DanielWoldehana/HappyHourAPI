@@ -31,7 +31,7 @@ const BarSchema = new Schema({
         }],
         parking:[{
             ref: 'Parking',
-            type:mongoose.Schema.Types.ObjectId
+            type:mongoose.Schema.Types.Mixed
         }]
 })
 
