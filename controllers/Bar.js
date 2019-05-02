@@ -9,8 +9,8 @@ const BarModel = require('../models/Bar')
 router.get('/', (req, res) => {
     BarModel.find({})
         .populate('reviews') 
-        // .populate('parking')
-       .then((ph) => {
+        .populate('parking')
+        .then((ph) => {
            res.json(ph)
        })
     .catch(err => {
@@ -21,9 +21,15 @@ router.get('/', (req, res) => {
 
 //find Bar by Name 
 router.get('/name/:name', (req, res) => {
-    BarModel.findOne({name: req.params.name}).then((ph) => {
+    BarModel.findOne({name: req.params.name})
+    .populate('reviews') 
+    .populate('parking')
+    .then((ph) => {
         res.json(ph)
         console.log(ph)
+    })
+    .catch(err => {
+        console.error(err)
     })
 })
 
@@ -32,35 +38,42 @@ router.get('/name/:name', (req, res) => {
 //find bars with the Beer HappyHour price less then req.params
 router.get('/hhBeerLorE/:price', (req, res) => {
     BarModel.find({ "happyHour.hhBeerPrice": {$lte:  req.params.price}})
+    .populate('reviews') 
+    .populate('parking')
     .then((ph) => {
         res.json(ph)
         console.log(ph)
+    })
+    .catch(err => {
+        console.error(err)
     })
 })
 
 //find bars with the Wine HappyHour price less then req.params
 router.get('/hhWineLorE/:price', (req, res) => {
     BarModel.find({ "happyHour.hhWinePrice": {$lte:  req.params.price}})
+    .populate('reviews') 
+    .populate('parking')
     .then((ph) => {
         res.json(ph)
         console.log(ph)
+    })
+    .catch(err => {
+        console.error(err)
     })
 })
 
 //find bars with the Food HappyHour price less then req.params
 router.get('/hhFoodLorE/:price', (req, res) => {
     BarModel.find({ "happyHour.hhFoodPrice": {$lte:  req.params.price}})
+    .populate('reviews') 
+    .populate('parking')
     .then((ph) => {
         res.json(ph)
         console.log(ph)
     })
-})
-
-//add an IF condition
-router.get('/barsOpenAt/:time', (req, res) => {
-    BarModel.find({hours: req.params.time})
-    .then((ph) =>{
-        res.json(ph)
+    .catch(err => {
+        console.error(err)
     })
 })
 
@@ -69,10 +82,12 @@ router.get('/barsOpenAt/:time', (req, res) => {
 
 //Add a new Bar to the Bars Array
 router.post('/', (req, res) => {
+BarModel.deleteMany({}).then(() =>{
     BarModel.create(req.body)
     .then((ph) =>{
         res.json(ph)
     })
+})
 })
 
 //All PUT request 
