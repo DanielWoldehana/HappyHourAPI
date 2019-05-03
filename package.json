@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "repository": {
@@ -14,6 +13,9 @@
   "keywords": [],
   "author": "Daniel Woldehana",
   "license": "ISC",
+  "engines": {
+    "node": "11.12.0"
+  },
   "bugs": {
     "url": "https://github.com/DanielWoldehana/HappyHourAPI/issues"
   },
