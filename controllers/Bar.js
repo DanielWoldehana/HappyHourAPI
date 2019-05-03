@@ -82,17 +82,15 @@ router.get('/hhFoodLorE/:price', (req, res) => {
 
 //Add a new Bar to the Bars Array
 router.post('/', (req, res) => {
-BarModel.deleteMany({}).then(() =>{
     BarModel.create(req.body)
     .then((ph) =>{
         res.json(ph)
     })
 })
-})
 
 //All PUT request 
 // enter the bar name you want to change and then enter what you want to change in the req.body
-router.put('/:nameOfBarToUpdate', (req, res) => {
+router.put('/update/:nameOfBarToUpdate', (req, res) => {
     BarModel.findOneAndUpdate({name: req.params.nameOfBarToUpdate}, req.body)
     .then((ph) => {
         res.json(ph)
@@ -101,8 +99,12 @@ router.put('/:nameOfBarToUpdate', (req, res) => {
 
 
 //All Delete requests
-router.delete('/deleteBar/:objectID', (req, res) => {
-    BarModel.deleteOne({name: req.params.objectID})
+
+//Delete a bar by searching for the bar with the Property of your choice and then follow with the key Pair/value of the Property
+router.delete('/delete/:property/:keyValue', (req, res) => {
+    BarModel.deleteOne({"req.params.property": req.params.keyValue}).then((ph) => {
+        res.json(ph)
+    })
 })
 
 module.exports = router
