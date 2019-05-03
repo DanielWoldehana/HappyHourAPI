@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 })
 
 //find all bars with a review score of the req.params or higher
-router.get('/scoreGt/:number', (req, res) => {
+router.get('/scoreGorE/:number', (req, res) => {
     ReviewModel.find({score: {$gte: req.params.number}}).then((ph) => {
         res.json(ph)
         console.log(ph)
@@ -38,7 +38,7 @@ router.post('/', (req, res) => {
 
 //find a review by name then update something about it
 
-router.put('/updateReview/:name', (req, res) => {
+router.put('/update/:name', (req, res) => {
     ReviewModel.update({name: req.params.name}, req.body).then((ph) => {
         res.json(ph)
         console.log(ph)

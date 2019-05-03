@@ -101,8 +101,8 @@ router.put('/update/:nameOfBarToUpdate', (req, res) => {
 //All Delete requests
 
 //Delete a bar by searching for the bar with the Property of your choice and then follow with the key Pair/value of the Property
-router.delete('/delete/:property/:keyValue', (req, res) => {
-    BarModel.deleteOne({"req.params.property": req.params.keyValue}).then((ph) => {
+router.delete('/delete/:id', (req, res) => {
+    BarModel.deleteOne({_id: req.params.id}).then((ph) => {
         res.json(ph)
     })
 })
