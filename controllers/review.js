@@ -49,7 +49,7 @@ router.put('/update/:name', (req, res) => {
 })
 
 //delete a review 
-router.delete('/objectId/:ID', (req, res) => {
+router.delete('/delete/:ID', (req, res) => {
     ReviewModel.deleteOne({_id: req.params.ID}).then((ph) => {
         res.json(ph)
         console.log(ph)

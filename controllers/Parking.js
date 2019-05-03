@@ -38,7 +38,7 @@ router.get('/PriceLorE/:price', (req, res) => {
 
 //All POST request
 //add a new parking  spot
-router.post('/newParking', (req, res) => {
+router.post('/', (req, res) => {
     ParkingModel.create(req.body)
     .then((ph) => {
         res.json(ph)

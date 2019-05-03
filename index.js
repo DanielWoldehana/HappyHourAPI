@@ -4,9 +4,7 @@ const reviewController = require('./controllers/review')
 const parkingController =require('./controllers/parking')
 const barController = require('./controllers/bar')
 
-
 const app = express()
-
 app.use(parser.urlencoded({extended: true}))
 app.use(parser.json())
 
@@ -17,5 +15,5 @@ app.use('/api/bar', barController)
 app.set("port", process.env.PORT || 3000)
 
 app.listen(app.get("port"), () => {
-    console.log(`✅ PORT: ${app.get("port")} 🌟`)
+    console.log(`Neeemooo Just Keep Swimming on ....✅ PORT: ${app.get("port")} 🌟`)
   })
