@@ -14,5 +14,8 @@ app.use(parser.json())
 app.use('/api/reviews', reviewController)
 app.use('/api/parking', parkingController)
 app.use('/api/bar', barController)
+app.set("port", process.env.PORT || 3000)
 
-app.listen(process.env.PORT || 3000, () => console.log('NEMO00 Just keep swimming......on port 3000'))
+app.listen(app.get("port"), () => {
+    console.log(`✅ PORT: ${app.get("port")} 🌟`)
+  })
