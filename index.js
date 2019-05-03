@@ -1,8 +1,8 @@
 const express = require('express')
 const parser = require('body-parser')
-const reviewController = require('./controllers/review')
-const parkingController =require('./controllers/parking')
-const barController = require('./controllers/bar')
+const reviewController = require('./controllers/reviewController')
+const parkingController =require('./controllers/parkingController')
+const barController = require('./controllers/barController.js')
 
 const app = express()
 app.use(parser.urlencoded({extended: true}))
