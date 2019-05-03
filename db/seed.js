@@ -19,7 +19,9 @@ BarsModel.deleteMany({}).then(() => {
             ParkingModel.create(AllParking[i]).then((newParking) => {
             newBar.reviews.push(newReview._id)
             newBar.parking.push(newParking._id)
+            newReview.bar.push(newBar.name, newBar.address, newBar.phoneNumber, newBar.website)
             newBar.save()
+            newReview.save()
             console.log(newBar)
         })
         })

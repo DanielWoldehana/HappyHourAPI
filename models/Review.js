@@ -7,10 +7,10 @@ const ReviewSchema = new Schema({
         score: Number,
         review: String,
         yelp: String,
-        bar: {
+        bar: [{
                 ref:'Bar',
                 type: mongoose.Schema.Types.Mixed
-        }
+        }]
 })
 
 module.exports = mongoose.model('Review', ReviewSchema)
