@@ -28,9 +28,9 @@ router.get('/name/:name', (req, res) => {
 })
 
 
-//find all parking place with a price less then req.params
-router.get('/PriceLessThen/:price', (req, res) => {
-    ParkingModel.find({price: {$lt: req.params.price}})
+//find all parking place with a price less then or equal to req.params
+router.get('/PriceLorE/:price', (req, res) => {
+    ParkingModel.find({price4Day: {$lte: req.params.price}})
     .then((ph) => {
         res.json(ph)
     })
@@ -38,8 +38,7 @@ router.get('/PriceLessThen/:price', (req, res) => {
 
 //All POST request
 //add a new parking  spot
-
-router.post('/newParkingLot', (req, res) => {
+router.post('/newParking', (req, res) => {
     ParkingModel.create(req.body)
     .then((ph) => {
         res.json(ph)
@@ -49,8 +48,8 @@ router.post('/newParkingLot', (req, res) => {
 //All PUT requests 
 //find the Parking lot by name and update anything about it by inserting it in the req.body
 
-router.put('/updateParkingLot/:ID', (req, res) => {
-    ParkingModel.findOneAndUpdate({_id: req.params.ID}, req.body)
+router.put('/updateParking/:ID', (req, res) => {
+    ParkingModel.update({_id: req.params.ID}, req.body)
     .then((ph) => {
         res.json(ph)
     })
@@ -60,7 +59,7 @@ router.put('/updateParkingLot/:ID', (req, res) => {
 //All the Delete requests
 //delete parking lot by objectID
 
-router.delete('/parkingLotId/:objectId', (req, res) => {
+router.delete('/delete/:objectId', (req, res) => {
     ParkingModel.deleteOne({_id: req.params.objectId})
     .then((ph) => {
         res.json(ph)

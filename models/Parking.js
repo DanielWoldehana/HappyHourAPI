@@ -3,11 +3,15 @@ const Schema = mongoose.Schema
 
 
 const ParkingSchema = new Schema({
+        closestBar: [{
+                ref:'Bar',
+                type: mongoose.Schema.Types.Mixed
+        }],
         name: String,
         address: String,
         phoneNumber: String,
         website: String,
-        price: Number
+        price4Day: Number
 })
 
 
